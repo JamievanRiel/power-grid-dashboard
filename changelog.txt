@@ -1,0 +1,11 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 23. 10. 2026
+  Features:
+    - Initial release.
+    - Dashboard with every electric network on every planet and platform, power switches taken into account.
+    - Satisfaction, usage against generator capacity, accumulator charge and time until full or empty.
+    - Lowest satisfaction of the last five minutes.
+    - Alerts for brownouts (with a delay) and for accumulators running out.
+    - Rename networks, show them on the map and pin them.
+    - Remote interface: get_networks, update_now, rename, open and rescan.

@@ -1,0 +1,9 @@
+{
+  "name": "power-grid-dashboard",
+  "version": "1.0.0",
+  "title": "Power Grid Dashboard",
+  "author": "Jamie",
+  "description": "One window with every electric network on every planet and platform: satisfaction, usage against capacity, accumulator charge and time left, the lowest satisfaction of the last five minutes, and real alerts for brownouts and draining accumulators. Rename networks, jump to them or pin them.",
+  "factorio_version": "2.1",
+  "dependencies": ["base >= 2.1.0"]
+}
