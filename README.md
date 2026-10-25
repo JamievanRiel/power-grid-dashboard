@@ -12,7 +12,7 @@ bar or **Ctrl + Shift + G**.
 - **Lowest (5 min)**: the lowest satisfaction of the last five minutes, so short brownouts are not missed.
 - **Poles**, and where the network is.
 
-Networks joined by a closed power switch count as one network. Filter by planet or platform, show only networks with
+Networks joined by a closed power switch count as one. Filter by planet or platform, show only networks with
 problems, and hide small networks (fewer poles than set in the mod settings).
 
 ## Actions
@@ -28,14 +28,6 @@ problems, and hide small networks (fewer poles than set in the mod settings).
 
 Alerts are refreshed every second and disappear when the problem is gone. Small networks get no alerts.
 
-## Performance
-
-Factorio has no list of electric networks, so the mod tracks every electric pole and checks them in the background,
-250 per tick by default (adjustable). Each network is measured once per second.
-
-Poles are tracked through the build events. Poles that another mod creates without raising an event are found the next
-time the mod configuration changes, or immediately with `remote.call("power-grid-dashboard", "rescan")`.
-
 ## Remote interface
 
 ```lua
@@ -46,4 +38,6 @@ remote.call("power-grid-dashboard", "open", player_index)
 remote.call("power-grid-dashboard", "rescan")
 ```
 
-`summary` values are in watts and joules. Requires Factorio 2.1 (LuaElectricNetwork). MIT license.
+`summary` values are in watts and joules.
+
+Requires Factorio 2.1. MIT license.
